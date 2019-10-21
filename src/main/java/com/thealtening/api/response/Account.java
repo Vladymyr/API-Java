@@ -18,15 +18,23 @@
 
 package com.thealtening.api.response;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Account {
 
-
+    @SerializedName("username")
     private String username;
+
+    @SerializedName("password")
     private String password;
+
+    @SerializedName("token")
     private String token;
 
+    @SerializedName("limit")
     private boolean limit;
 
+    @SerializedName("info")
     private AccountDetails info;
 
     public String getToken() {
